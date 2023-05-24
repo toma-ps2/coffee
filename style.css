@@ -1,0 +1,185 @@
+html, body{
+    margin: 0 auto;
+    height: 100%;
+    min-width: 320px;
+    max-width: 1200px;
+    scroll-behavior: smooth;
+}
+.back{
+    height: 100vh;
+    width: 1200px;
+    background: url('images/1.jpg') no-repeat center, center;
+    opacity: 0.8;
+    border-bottom: 3px solid brown;
+}
+.menu{
+    margin-left: calc(50% - 245px);
+    position: fixed;
+    z-index: 1;
+}
+.menu div, a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: brown;
+    font-weight: bold;
+    padding: 8px;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    display: inline-block;
+    text-align: center;
+}
+
+.menu a:hover{
+    color: rgb(239, 142, 73);
+}
+
+.back__ar{
+    width: 450px;
+    height: 360px;
+    background-color: rgba(255, 228, 196, 0.36);
+    border-radius: 5px;
+    position: relative;
+    top: 170px;
+    left: 15px;
+}
+.back__pic{
+    position: relative;
+    width: 200px;
+    border-radius: 10px;
+    left: 235px;
+    bottom: 87px;
+   
+}
+.back__pic:hover{
+    transition: all 500ms;
+    transform: scale(1.2);
+}
+
+.back__ar_bt{
+    width: 400px;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    text-align: center;
+    padding: 8px;
+    position: relative;
+    left: 15px;
+    top: 10px;
+    font-weight: bold;
+    color: brown;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    
+}
+.back__ar_bt2{
+    width: 200px;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    text-align: center;
+    padding: 8px;
+    position: relative;
+    left: 10px;
+    top: 15px;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: brown;
+}
+.back__ar_bt3{
+    width: 400px;
+    background-color: rgb(225, 216, 205);
+    border-radius: 10px;
+    padding: 5px;
+    position: relative;
+    left: 15px;
+    bottom: 70px;
+    font-weight: bold;
+    color: rgb(61, 47, 47);
+    text-align: justify;
+}
+
+.background{
+    height: 100vh;
+    width: 1200px;
+    background: url('images/2.jpg') no-repeat center, center;
+    border-bottom: 3px solid brown;
+    opacity: 0.8;
+}
+.background2{
+    height: 100vh;
+    width: 1200px;
+    background: url('images/3.jpg') no-repeat center, center;
+    border-bottom: 3px solid brown;
+    opacity: 0.8;
+}
+.background3{
+    height: 100vh;
+    width: 1200px;
+    background: url('images/4.jpg') no-repeat center, center;
+    border-bottom: 3px solid brown;
+    opacity: 0.8;
+}
+
+.left{
+    position: relative;
+    left: 740px;
+}
+.btn{
+    height: 40px;
+    width: 300px;
+    color: brown;
+    font-weight: bolder;
+    text-transform: uppercase;
+    background-color: antiquewhite;
+    margin: 0 auto;
+    border-radius: 10px;
+    text-align: center;
+    padding: 8px;
+    position: relative;
+    bottom: -300px;
+}
+.btn:hover{
+    --angle: 0deg;
+    border: 5px solid transparent;
+    border-image: linear-gradient(var(--angle) #d99440 , #ed400f, rgb(176, 65, 86)) 1;
+    animation: 5s rotate linear infinite;
+}
+.btn:hover{ 
+    --angle: 0deg;
+	border: 1vmin solid;
+	border-image: linear-gradient(var(--angle), red, rgb(177, 177, 76), rgb(218, 24, 92), rgb(103, 65, 5), rgb(209, 170, 30), magenta) 1;
+	animation: 10s rotate linear infinite;
+}
+
+@keyframes rotate {
+	to {
+		--angle: 360deg;
+	}
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+
+@media screen and (min-width:320px) and (max-width:1000px) {
+    .left{
+        left: 700px;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:800px) {
+    .left{
+        left:100px
+    }
+}
+@media screen and (min-width:320px) and (max-width:800px) {
+    .menu{
+        left: 200px;
+    }
+}
+@keyframes rotate {
+    to {
+      --angle: 360deg;
+    }
+  }
